@@ -13,6 +13,7 @@
         android:id="@+id/firstValue"
         android:layout_width="100sp"
         android:layout_height="wrap_content"
+        android:inputType="number"
         android:hint="@string/index_hint"/>
 
     <EditText
@@ -20,7 +21,9 @@
         android:layout_toRightOf="@id/firstValue"
         android:layout_width="100sp"
         android:layout_height="wrap_content"
+        android:inputType="number"
         android:hint="@string/carbs_hint"/>
+
     <Button
         android:id="@+id/calculateButton"
         android:layout_toRightOf="@+id/secondValue"
@@ -28,7 +31,7 @@
         android:layout_height="wrap_content"
         android:text="@string/calculate_button"/>
     <TextView
-        android:id="@+id/viewResult"
+        android:id="@+id/result_value"
         android:layout_below="@id/firstValue"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
