@@ -34,7 +34,7 @@
         android:id="@+id/result_value"
         android:layout_below="@id/firstValue"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="20sp"
         android:hint="@string/result_hint"
         android:text=""
         android:layout_marginLeft="10sp"/>
