@@ -5,6 +5,8 @@
     <string name="carbs_hint">Carbs in g</string>
     <string name="calculate_button">Go</string>
     <string name="result_hint">Glycemic Load Value</string>
-
+    <string name="list">list goes here</string>
+    <string name="total_label">Total Glycemic Load:</string>
+    <string name="total">The total</string>
 
 </resources>
