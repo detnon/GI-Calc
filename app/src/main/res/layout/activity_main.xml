@@ -30,12 +30,49 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/calculate_button"/>
+
     <TextView
         android:id="@+id/result_value"
         android:layout_below="@id/firstValue"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_height="20sp"
         android:hint="@string/result_hint"
         android:text=""
         android:layout_marginLeft="10sp"/>
+
+
+
+    <TextView
+        android:id="@+id/value_list"
+        android:layout_below="@id/result_value"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:hint="@string/list"
+        android:text=""
+        android:layout_marginTop="50sp"
+        android:layout_marginLeft="10sp"/>
+
+    <TextView
+        android:id="@+id/total_value_label"
+        android:layout_below="@id/result_value"
+        android:layout_toRightOf="@id/value_list"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:hint="@string/total_label"
+        android:text=""
+        android:layout_marginTop="50sp"
+        android:layout_marginLeft="10sp"/>
+
+
+    <TextView
+        android:id="@+id/total_value"
+        android:layout_below="@id/result_value"
+        android:layout_toRightOf="@id/total_value_label"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:hint="@string/total"
+        android:text=""
+        android:layout_marginTop="50sp"
+        android:layout_marginLeft="10sp"/>
+
 </RelativeLayout>
