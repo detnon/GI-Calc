@@ -35,39 +35,27 @@ public class MainActivity extends AppCompatActivity {
                 float indexValue = Integer.parseInt(firstValue.getText().toString());
                 float carbsInGrams = Integer.parseInt(secondValue.getText().toString());
 
-                // The mafs
                 float multiplied = indexValue * carbsInGrams;
                 float result = multiplied / 100;
 
-                // Change the Float to a string
                 String resultString = Float.toString(result);
 
-                // Set the text view to display the value
                 resultValue.setText(resultString);
 
-                // Add this value to the results ArrayList
                 resultsArray.add(resultString);
 
-                // loop through each element of the results array and format by appending
-                // a new line after each result
                 String arrayString = "";
                 float arrayFloat ;
                 float arraySum = 0;
 
+                // loop through each element of the results array and format by appending
+                // a new line after each result
                 for (String item : resultsArray) {
-                    // loop Through value strings and add them to the list
                     arrayString += item + "\n";
                     resultsList.setText(arrayString);
-
-                    // loop Through value strings and convert them to Float, then add them all up
-                    // if there are anymore
                     arrayFloat = Float.parseFloat(item);
                     arraySum = arraySum + arrayFloat;
-
-                    //convert back to a String
                     String arraySumString = Float.toString(arraySum);
-
-                    // Set the TextView to the correct value
                     totalValue.setText(arraySumString);
 
                 }
